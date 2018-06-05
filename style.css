@@ -14,13 +14,52 @@ a{
 }
 
  .container{
-   max-width: 1200px;
+   max-width: 1300px;
    margin: 0 auto;
    min-height: 100vh;
  }
 
  p{
    line-height: 1.4;
+ }
+
+ h1{
+   font-size: 64px;
+   margin: 0;
+ }
+
+ .page p, .page h1, .page ul, .page .small-head, .page .head-p{
+   max-width: 700px;
+ }
+
+ .page div.small-head:first-of-type{
+   padding-bottom: 16px;
+ }
+
+ .page img{
+   width: 100%;
+   margin: 32px 0;
+ }
+
+ .head-p{
+   margin-top: 32px;
+   margin-bottom: 32px;
+ }
+
+ .page p, .page ul{
+   margin: 32px 0;
+   padding-left: 48px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.5;
+ }
+
+ .page ul{
+   padding-left: 88px;
+ }
+
+ .page .video-container{
+   margin: 64px 0;
  }
 
  .divider{
@@ -32,13 +71,9 @@ a{
 
  .small-head{
    text-transform: uppercase;
-   letter-spacing: 3px;
-   font-weight: 900;
+   font-weight: 700;
+   letter-spacing: 1px;
    padding: 64px 0 32px 0;
- }
-
- div.small-head:first-of-type{
-   padding-top: 192px;
  }
 
 .content-container{
@@ -46,18 +81,24 @@ a{
   padding-left: 264px;
   min-height: 100vh;
   padding-right: 64px;
+  padding-bottom: 192px;
+  padding-top: 100px;
 }
 
 .content-container-inner{
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
+.logo img{
+  width: 128px;
+  margin: 32px 0;
+}
+
 .hero-text{
-  font-family: 'Playfair Display';
-  font-size: 48px;
+  font-size: 42px;
   line-height: 1.4;
-  max-width: 764px;
+  max-width: 900px;
   margin: 64px 0;
 }
 
@@ -85,7 +126,7 @@ a{
 }
 
 .project-item{
-  flex-basis: 50%;
+  flex-basis: 100%;
   display: inline-flex;
   flex-flow: column nowrap;
   padding: 16px 8px;
@@ -93,7 +134,15 @@ a{
 
 .project-item img{
   width: 100%;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
+  transition: all 0.4s ease;
+}
+
+.project-item img:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.2s ease;
+  transform: translateY(-4px);
+  opacity: 0.8;
 }
 
 .project-item h2{
@@ -107,4 +156,51 @@ a{
   margin: 0;
   font-size: 20px;
   font-weight: 300;
+}
+
+@media (min-width: 620px){
+  .project-item{
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 960px){
+  body{
+    font-size: 20px;
+  }
+
+  .content-container{
+    padding-left: 172px;
+    padding-right: 48px;
+  }
+
+  .hero-text{
+    font-size: 32px;
+  }
+
+  .page h1{
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 760px){
+  .content-container{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 500px){
+  .content-container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-text{
+    font-size: 24px;
+  }
+
+  .page h1{
+    font-size: 36px;
+  }
 }

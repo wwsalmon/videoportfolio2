@@ -1,28 +1,33 @@
 .sidebar{
   text-align: right;
-  padding: 192px 16px 16px 16px;
+  padding: 16px;
   width: 200px;
   position: fixed;
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-end;
 }
 
 .nav-item{
   margin: 6px 0;
-  letter-spacing: 1px;
+  opacity: 0.4;
+  font-weight: 600;
+  transition: all 0.05s ease;
+}
+
+.nav-item:hover{
+  opacity: 1.0;
+}
+
+.nav-item.selected{
+  opacity: 1.0;
 }
 
 .nav-item.selected a{
   color: #000;
-  font-weight: 700;
-}
-
-.logo img{
- width: 128px;
- margin: 0 0 48px 0;
+  pointer-events: none;
 }
 
 .name{
@@ -31,4 +36,53 @@
 
 .sidebar p{
  margin: 8px 0 0 0;
+}
+
+.sidebar-social{
+  padding-top: 48px;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.sidebar-social-item{
+  text-align: center;
+  width: 27px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.sidebar-social-item a{
+  color: #000;
+  opacity: 0.2;
+}
+
+.sidebar-social-item a:hover{
+  opacity: 1.0;
+}
+
+.sidebar-social-item.yt a:hover{
+  color: #ff0000;
+}
+
+.sidebar-social-item.ig a:hover{
+  color: #e4405f;
+}
+
+.sidebar-social-item.tw a:hover{
+  color: #55acee;
+}
+
+@media (max-width: 960px){
+  .sidebar{
+    width: 140px;
+  }
+}
+
+@media (min-width: 760px){
+
+}
+
+@media (max-width: 760px){
+  
 }
