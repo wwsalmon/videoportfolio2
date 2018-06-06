@@ -44,18 +44,19 @@ a{
  .head-p{
    margin-top: 32px;
    margin-bottom: 32px;
+   line-height: 1.5;
  }
 
  .page p, .page ul{
    margin: 32px 0;
    padding-left: 48px;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 20px;
    line-height: 1.5;
  }
 
  .page ul{
-   padding-left: 88px;
+   padding-left: 68px;
  }
 
  .page .video-container{
@@ -202,5 +203,17 @@ a{
 
   .page h1{
     font-size: 36px;
+  }
+
+  .page p{
+    padding-left: 0;
+  }
+
+  .page ul{
+    padding-left: 20px;
+  }
+
+  .page .video-container{
+    margin: 32px 0;
   }
 }
