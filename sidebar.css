@@ -35,6 +35,15 @@
   align-items: center;
 }
 
+.name{
+  font-family: 'Playfair Display';
+  font-size: 24px;
+  padding-bottom: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #546e8d;
+}
+
 .nav-item{
   margin: 6px 0;
   opacity: 0.4;
@@ -53,10 +62,6 @@
 .nav-item.selected a{
   color: #000;
   pointer-events: none;
-}
-
-.name{
- font-size: 32px;
 }
 
 .sidebar p{
@@ -111,6 +116,10 @@
   }
 
   .topbar{
+    display: none;
+  }
+
+  .name{
     display: none;
   }
 }
