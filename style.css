@@ -28,7 +28,7 @@ a{
    margin: 0;
  }
 
- .page p, .page h1, .page ul, .page .small-head, .page .head-p{
+ .page p, .page h1, .page ul, .page blockquote, .page .small-head, .page .head-p{
    max-width: 700px;
  }
 
@@ -47,16 +47,23 @@ a{
    line-height: 1.5;
  }
 
- .page p, .page ul{
-   margin: 32px 0;
-   padding-left: 48px;
+ .page p, .page ul, .page blockquote{
+   margin-top: 32px;
+   margin-bottom: 32px;
+   margin-left: 48px;
    font-weight: 400;
    font-size: 20px;
    line-height: 1.5;
  }
 
  .page ul{
-   padding-left: 68px;
+   padding-left: 20px;
+ }
+
+ .page blockquote{
+   font-style: italic;
+   padding-left: 20px;
+   border-left: 1px solid #000;
  }
 
  .page .video-container{
@@ -107,6 +114,7 @@ a{
   width: 100%;
   position: relative;
   margin: 32px 0;
+  box-shadow: 0 0px 20px rgba(0,0,0,0.19), 0 0px 6px rgba(0,0,0,0.23);
 }
 
 .video-container{
@@ -140,7 +148,7 @@ a{
 }
 
 .project-item img:hover{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.19), 0 4px 6px rgba(0,0,0,0.23);
   transition: all 0.2s ease;
   transform: translateY(-8px);
   opacity: 0.8;
@@ -214,15 +222,12 @@ a{
     font-size: 36px;
   }
 
-  .page p{
-    padding-left: 0;
-  }
-
-  .page ul{
-    padding-left: 20px;
+  .page p, .page ul, .page blockquote{
+    margin-left: 0;
   }
 
   .page .video-container{
-    margin: 32px 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }

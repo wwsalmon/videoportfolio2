@@ -9,11 +9,6 @@ function buildMenu(page,select){
         <div class='nav-item'><a href='about/index.html'><span>About</span></a></div>
         <div class='nav-item'><a href='szhang-resume.pdf'><span>Resume</span></a></div>
         <div class='nav-item'><a href='contact/index.html'><span>Contact</span></a></div>
-        <div class='sidebar-social'>
-          <div class='sidebar-social-item yt'><a href='https://www.youtube.com/channel/UCNyoJQcV6NCHiRCeqcCxJag'><i class="fab fa-youtube"></i></a></div>
-          <div class='sidebar-social-item ig'><a href='https://www.instagram.com/samsonzhangthesalmon/'><i class="fab fa-instagram"></i></a></div>
-          <div class='sidebar-social-item tw'><a href='https://twitter.com/wwsalmon'><i class="fab fa-twitter"></i></a></div>
-        </div>
       </div>
       `
     );
@@ -28,15 +23,19 @@ function buildMenu(page,select){
         <div class='nav-item about'><a href='../about/index.html'><span>About</span></a></div>
         <div class='nav-item'><a href='../szhang-resume.pdf'><span>Resume</span></a></div>
         <div class='nav-item contact'><a href='../contact/index.html'><span>Contact</span></a></div>
-        <div class='sidebar-social'>
-          <div class='sidebar-social-item yt'><a href='https://www.youtube.com/channel/UCNyoJQcV6NCHiRCeqcCxJag'><i class="fab fa-youtube"></i></a></div>
-          <div class='sidebar-social-item ig'><a href='https://www.instagram.com/samsonzhangthesalmon/'><i class="fab fa-instagram"></i></a></div>
-          <div class='sidebar-social-item tw'><a href='https://twitter.com/wwsalmon'><i class="fab fa-twitter"></i></a></div>
-        </div>
       </div>
       `
     );
   }
+  $(".sidebar").append(
+    `
+    <div class='sidebar-social'>
+      <div class='sidebar-social-item yt'><a href='https://www.youtube.com/channel/UCNyoJQcV6NCHiRCeqcCxJag' target="_blank"><i class="fab fa-youtube"></i></a></div>
+      <div class='sidebar-social-item ig'><a href='https://www.instagram.com/samsonzhangthesalmon/' target="_blank"><i class="fab fa-instagram"></i></a></div>
+      <div class='sidebar-social-item tw'><a href='https://twitter.com/wwsalmon' target="_blank"><i class="fab fa-twitter"></i></a></div>
+    </div>
+    `
+  )
   if (select == "about"){
     $(".about").addClass("selected");
   }
